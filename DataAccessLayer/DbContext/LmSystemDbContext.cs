@@ -13,23 +13,23 @@ public sealed class LmSystemDbContext : DbContext
         _tenantProvider = tenantProvider;
     }
 
-    public DbSet<Tenant> Tenants => Set<Tenant>();
-    public DbSet<School> Schools => Set<School>();
-    public DbSet<User> Users => Set<User>();
-    public DbSet<Role> Roles => Set<Role>();
-    public DbSet<UserRole> UserRoles => Set<UserRole>();
-    public DbSet<Student> Students => Set<Student>();
-    public DbSet<Teacher> Teachers => Set<Teacher>();
-    public DbSet<ClassRoom> Classes => Set<ClassRoom>();
-    public DbSet<Subject> Subjects => Set<Subject>();
-    public DbSet<ClassSubject> ClassSubjects => Set<ClassSubject>();
-    public DbSet<AcademicYear> AcademicYears => Set<AcademicYear>();
-    public DbSet<Term> Terms => Set<Term>();
-    public DbSet<FeeCategory> FeeCategories => Set<FeeCategory>();
-    public DbSet<FeeStructure> FeeStructures => Set<FeeStructure>();
-    public DbSet<StudentFee> StudentFees => Set<StudentFee>();
-    public DbSet<Payment> Payments => Set<Payment>();
-    public DbSet<Discount> Discounts => Set<Discount>();
+    public DbSet<Tenant> Tenants => base.Set<Tenant>();
+    public DbSet<School> Schools => base.Set<School>();
+    public DbSet<User> Users => base.Set<User>();
+    public DbSet<Role> Roles => base.Set<Role>();
+    public DbSet<UserRole> UserRoles => base.Set<UserRole>();
+    public DbSet<Student> Students => base.Set<Student>();
+    public DbSet<Teacher> Teachers => base.Set<Teacher>();
+    public DbSet<ClassRoom> Classes => base.Set<ClassRoom>();
+    public DbSet<Subject> Subjects => base.Set<Subject>();
+    public DbSet<ClassSubject> ClassSubjects => base.Set<ClassSubject>();
+    public DbSet<AcademicYear> AcademicYears => base.Set<AcademicYear>();
+    public DbSet<Term> Terms => base.Set<Term>();
+    public DbSet<FeeCategory> FeeCategories => base.Set<FeeCategory>();
+    public DbSet<FeeStructure> FeeStructures => base.Set<FeeStructure>();
+    public DbSet<StudentFee> StudentFees => base.Set<StudentFee>();
+    public DbSet<Payment> Payments => base.Set<Payment>();
+    public DbSet<Discount> Discounts => base.Set<Discount>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
